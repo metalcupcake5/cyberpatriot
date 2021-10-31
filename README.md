@@ -4,7 +4,6 @@ cyberpatriot stuff
     - outputs to `find.txt` and prints in console
 
 current files
-
 - `.txt`
 - `.png`
 - `.mp4`
