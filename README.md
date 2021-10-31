@@ -1,5 +1,5 @@
 cyberpatriot stuff
-#### `find.txt`
+#### `find.sh`
 - finds files with common extentions in the current filepath
     - outputs to `find.txt` and prints in console
 
