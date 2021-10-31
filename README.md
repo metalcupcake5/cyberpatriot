@@ -1,6 +1,6 @@
 cyberpatriot stuff
 #### `find.sh`
-- finds files with common extentions in the current filepath
+- finds files with common extensions in the current filepath
     - outputs to `find.txt` and prints in console
 
 current files
