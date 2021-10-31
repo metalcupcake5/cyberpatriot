@@ -1,1 +1,1 @@
-(find $(pwd) -name "*.txt"; find $(pwd) -name "*.png") | tee find.txt
+(find $(pwd) -name "*.txt"; find $(pwd) -name "*.png"; find $(pwd) -name "*.mp4"; find $(pwd) -name "*.zip"; find $(pwd) -name "*.rar") | tee find.txt
