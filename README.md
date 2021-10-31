@@ -4,8 +4,9 @@ cyberpatriot stuff
     - outputs to `find.txt` and prints in console
 
 current files
-    - `.txt`
-    - `.png`
-    - `.mp4`
-    - `.zip`
-    - `.rar`
+
+- `.txt`
+- `.png`
+- `.mp4`
+- `.zip`
+- `.rar`
