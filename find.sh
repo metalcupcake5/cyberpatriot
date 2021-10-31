@@ -1,0 +1,1 @@
+(find $(pwd) -name "*.txt"; find $(pwd) -name "*.png") | tee find.txt
