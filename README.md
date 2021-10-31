@@ -1,4 +1,5 @@
 cyberpatriot stuff
+
 #### `find.sh`
 - finds files with common extensions in the current filepath
     - outputs to `find.txt` and prints in console
@@ -9,3 +10,6 @@ current files
 - `.mp4`
 - `.zip`
 - `.rar`
+
+#### `users.sh`
+- can list users, groups, and groups for a specific user
