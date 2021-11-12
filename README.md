@@ -24,3 +24,6 @@ current files
 
 #### `users.sh`
 - can list users, groups, and groups for a specific user
+
+#### `update.sh`
+- install, remove, update packages
