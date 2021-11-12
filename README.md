@@ -5,11 +5,22 @@ cyberpatriot stuff
     - outputs to `find.txt` and prints in console
 
 current files
-- `.txt`
-- `.png`
-- `.mp4`
-- `.zip`
-- `.rar`
+- pictures
+    - `.png`
+    - `.jpg`
+    - `.jpeg`
+    - `.gif`
+- video
+    - `.mp4`
+    - `.mov`
+    - `.webm`
+- other
+    - `.txt`
+    - `.zip`
+    - `.rar`
+    - `.tar.gz`
+    - `.php`
+    - files with `backdoor` in their name
 
 #### `users.sh`
 - can list users, groups, and groups for a specific user
