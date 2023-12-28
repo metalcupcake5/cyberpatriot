@@ -36,6 +36,18 @@ reference
         - `groups <username>`: display groups for a user
         - `groupadd <group name>`: create a group
         - `groupdel <group name>`: delete a group
+- `/etc/login.defs`
+    - login settings
+    - set password aging controls
+```
+PASS_MIN_DAYS 7
+PASS_MAX_DAYS 90
+PASS_WARN_AGE 14
+```
+- `/etc/resolv.conf`
+    - nameserver: `nameserver 8.8.8.8`
+- `/etc/hosts`
+    - compare to a default
 
 openvpn | <https://wiki.archlinux.org/title/OpenVPN#>
 - `/etc/openvpn/server/server.conf`
@@ -61,6 +73,14 @@ tls-version-min 1.3
     - `apt list --installed | grep -v automatic`
 - list all files relating to a package
     - `dpkg -L <package name>`
+- sources file: `/etc/apt/sources.list` - double check
+- sources directory: `/etc/apt/sources.list.d/` - double check
+- common packages to look for
+    - `nmap`
+    - `telnet`
+    - `netcat`
+    - `hydra` and derivatives
+    - john the ripper
 
 # sudo
 https://wiki.archlinux.org/title/Sudo
@@ -69,9 +89,25 @@ https://wiki.archlinux.org/title/Sudo
 - check sudo permissions for a user
     - `sudo -lU <user>`
 - always use `EDITOR=nano visudo` to edit sudoers file
+- disable root: `sudo passwd -l root`
 
 # polkit
 establishes privileges without sudo
 <https://wiki.archlinux.org/title/Polkit>
 - try installinlg `polkit-explorer`
 - actions are in `/usr/share/polkit-1/actions`, use `pkaction` to view quickly
+
+# ufw
+- `sudo ufw enable`
+- display firewall rules: `sudo ufw status numbered`
+    - delete any unnecessary rules
+
+# vsftpd
+https://wiki.archlinux.org/title/Very_Secure_FTP_Daemon
+- `/etc/vsftpd.conf`
+    - `anonymous_enable=NO`
+    - `no_anon_password=NO`
+    - `chroot_local_user=YES`
+    - limit local users: `userlist_enable=YES`
+        - user list is in `/etc/vsftpd.user_list`
+    - `ssl_enable=YES` - read more [here](https://wiki.archlinux.org/title/Very_Secure_FTP_Daemon#Using_SSL/TLS_to_secure_FTP)
